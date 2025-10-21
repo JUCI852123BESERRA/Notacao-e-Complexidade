@@ -1,0 +1,26 @@
+### 1. Complexidade de Tempo Constante: O(1)
+
+#Este tipo de algoritmo leva a mesma quantidade de tempo para ser executado, independentemente do tamanho da entrada. Um bom exemplo é acessar um elemento em uma lista pelo seu índice.
+
+"""python
+"""
+#Exemplo de Complexidade de Tempo Constante - O(1)
+
+
+def encontrar_primeiro_elemento(lista):
+    """
+    Esta função retorna o primeiro elemento da lista.
+    A operação de acesso ao índice 0 leva o mesmo tempo, não importa o tamanho da lista.
+    Portanto, a complexidade é O(1).
+    """
+    if not lista:
+        return None
+    return lista[0]
+
+# Exemplo de uso:
+minha_lista = [10, 20, 30, 40, 50]
+print(f"O primeiro elemento é: {encontrar_primeiro_elemento(minha_lista)}")
+
+# O tempo de execução é o mesmo para uma lista muito maior
+outra_lista = list(range(10000))
+print(f"O primeiro elemento de uma lista grande é: {encontrar_primeiro_elemento(outra_lista)}")
